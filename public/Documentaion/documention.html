@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Documention</title>
+    <script type="module" src="js/documention.js"></script>
+</head>
+
+<body>
+    <h1 class="display-1 text-dark text-center mt-3">CARS API</h1>
+    <p class="text-mute text-center">Free API for testing and prototyping (Documention)</p>
+    <div class="container-fluid">
+        <div class="container">
+            <hr class="mt-4">
+            <main class="mt-5">
+                <div class="req-res-dom my-3">
+                    <div class="row row-cols-1 row-cols-md-3 g-1 g-md-3">
+                        <div class="col">
+                            <div class="gray p-3">
+                                <h4 class="display-5 fw-bold">Domain</h4>
+                                <h5 class="text-white">https://project-yarin.herokuapp.com</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gray p-3">
+                                <h4 class="display-5 fw-bold">Request</h4>
+                                <h5 style="font-size:1.1em;" class="text-white fw-bold">/cars<span id="id_req"></span></h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gray p-3">
+                                <h4 class="display-5 fw-bold">Response</h4>
+                                <h3 id="id_res" class="fw-bold" style="color: rgb(78, 235, 31);">200</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-md-3  justify-content-between">
+
+                    <div class="reqDivs order-md-0 order-3">
+                        <!-- start btn -->
+                        <div class="col-md-12 col-12 pe-md-2 mt-3">
+                            <div class="request p-3">
+                                <a id="id_get1" class="btn btn-lg btn-info text-white fw-bold float-start me-3">Get</a>
+                                <h5 class="text-white pt-2">List cars</h5>
+                            </div>
+                        </div>
+                        <!-- end btn -->
+                        <!-- start btn -->
+                        <div class="col-md-12 col-12 pe-md-2 mt-3">
+                            <div class="request p-3">
+                                <a id="id_get2" class="btn btn-lg btn-info text-white fw-bold float-start me-3">Get</a>
+                                <h5 class="text-white pt-2">List cars by price range</h5>
+                            </div>
+                        </div>
+                        <!-- end btn -->
+                        <!-- start btn -->
+                        <div class="col-md-12 col-12 pe-md-2 mt-3">
+                            <div class="request p-3">
+                                <a id="id_get3" class="btn btn-lg btn-info text-white fw-bold float-start me-3">Get</a>
+                                <h5 class="text-white pt-2">List cars by page</h5>
+                            </div>
+                        </div>
+                        <!-- end btn -->
+                        <!-- start btn -->
+                        <div class="col-md-12 col-12 pe-md-2 mt-3">
+                            <div class="request p-3">
+                                <a id="id_get4" class="btn btn-lg btn-info text-white fw-bold float-start me-3">Get</a>
+                                <h5 class="text-white pt-2">Search cars by company or info</h5>
+                            </div>
+                        </div>
+                        <!-- end btn -->
+                        <!-- start btn -->
+                        <div class="col-md-12 col-12 pe-md-2 mt-3">
+                            <div class="request p-3">
+                                <a id="id_get5" class="btn btn-lg btn-info text-white fw-bold float-start me-3">Get</a>
+                                <h5 class="text-white pt-2">List cars by category</h5>
+                            </div>
+                        </div>
+                        <!-- end btn -->
+                        <!-- start btn -->
+                        <div class="col-md-12 col-12 pe-md-2 mt-3 ">
+                            <div class="request p-3">
+                                <a id="id_get6" class="btn btn-lg btn-success text-white fw-bold float-start me-3">Post</a>
+                                <h5 class="text-white pt-2">Add car</h5>
+                            </div>
+                        </div>
+                        <!-- end btn -->
+                        <!-- start btn -->
+                        <div class="col-md-12 col-12 pe-md-2 mt-3 ">
+                            <div class="request p-3">
+                                <a id="id_get7" class="btn btn-lg btn-warning text-white fw-bold float-start me-3 pe-4">Put</a>
+                                <h5 class="text-white pt-2">Update car</h5>
+                            </div>
+                        </div>
+                        <!-- end btn -->
+                        <!-- start btn -->
+                        <div class="col-md-12 col-12 pe-md-2 mt-3 mb-5">
+                            <div class="request p-3">
+                                <a id="id_get8" class="btn btn-lg btn-danger text-white fw-bold float-start me-3 ">Delete</a>
+                                <h5 class="text-white pt-2">Delete car</h5>
+                            </div>
+                        </div>
+                        <!-- end btn -->
+
+                    </div>
+                    <div class="order-md-1 order-1 px-3">
+                        <pre id="id_example" class="border border-3 border-dark bg-light px-2" style="height: 300px;">
+                            <h5>Body Request</h5>
+                        </pre>
+                    </div>
+
+                    <!-- output div -->
+                    <div class="  order-md-1 order-0 px-3">
+                        <pre id="id_output" class="border border-3 border-dark bg-light px-2" style="height: 300px;">
+                            <h5>Response</h5>
+                                
+                        </pre>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

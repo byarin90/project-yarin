@@ -1,0 +1,10 @@
+.gray {
+    min-height: 180px;
+    background: grey;
+}
+
+.request {
+    min-height: 90px;
+    background: rgb(46, 45, 45);
+    border-radius: 10px;
+}
