@@ -4,6 +4,10 @@ const http = require("http");
 const { routesInit, corsAccessControl } = require("./routes/config_routes"); // import routesInit() & corsAccessControl()
 require("./db/mongoConnect"); // Links the mongo to app
 
+setInterval(function() {
+    http.get("https://project-yarin.herokuapp.com/");
+}, 300000);
+
 const app = express(); // app of express        
 
 app.use(express.json()); // app of jsons
